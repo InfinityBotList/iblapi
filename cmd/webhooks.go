@@ -7,20 +7,20 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/InfinityBotList/ibl/internal/agents/funneleditor"
-	"github.com/InfinityBotList/ibl/internal/agents/funnelserver"
-	"github.com/InfinityBotList/ibl/internal/config"
-	"github.com/InfinityBotList/ibl/internal/ui"
-	"github.com/InfinityBotList/ibl/internal/views"
-	"github.com/InfinityBotList/ibl/types"
-	"github.com/InfinityBotList/ibl/types/popltypes"
+	"github.com/InfinityBotList/iblapi/internal/agents/funneleditor"
+	"github.com/InfinityBotList/iblapi/internal/agents/funnelserver"
+	"github.com/InfinityBotList/iblapi/internal/config"
+	"github.com/InfinityBotList/iblapi/internal/ui"
+	"github.com/InfinityBotList/iblapi/internal/views"
+	"github.com/InfinityBotList/iblapi/types"
+	"github.com/InfinityBotList/iblapi/types/popltypes"
 	"github.com/spf13/cobra"
 )
 
 var setupCmd = &cobra.Command{
 	Use:   "setup",
-	Short: "Sets up the a bot for webhooks.",
-	Long:  "Sets up a bot for webhooks.",
+	Short: "Sets up an entity for webhooks.",
+	Long:  "Sets up an entity for webhooks.",
 	Run: func(cmd *cobra.Command, args []string) {
 		auth, err := views.AccountSwitcher(string(types.TargetTypeUser))
 

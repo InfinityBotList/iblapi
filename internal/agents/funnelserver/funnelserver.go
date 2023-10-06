@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/InfinityBotList/ibl/internal/agents/webhookpatcher"
-	"github.com/InfinityBotList/ibl/internal/ui"
-	"github.com/InfinityBotList/ibl/types"
-	"github.com/InfinityBotList/ibl/types/popltypes"
+	"github.com/InfinityBotList/iblapi/internal/agents/webhookpatcher"
+	"github.com/InfinityBotList/iblapi/internal/ui"
+	"github.com/InfinityBotList/iblapi/types"
+	"github.com/InfinityBotList/iblapi/types/popltypes"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

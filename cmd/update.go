@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/InfinityBotList/ibl/internal/downloader"
-	"github.com/InfinityBotList/ibl/internal/links"
+	"github.com/InfinityBotList/iblapi/internal/downloader"
+	"github.com/InfinityBotList/iblapi/internal/links"
 	"github.com/fynelabs/selfupdate"
 	"github.com/spf13/cobra"
 )
@@ -20,8 +20,8 @@ import (
 // updateCmd represents the update command
 var updateCmd = &cobra.Command{
 	Use:     "update",
-	Short:   "IBLCLI update command",
-	Long:    `IBLCLI updater.`,
+	Short:   "IBLAPI update command",
+	Long:    `IBLAPI updater.`,
 	Aliases: []string{"u", "upd"},
 	Run: func(cmd *cobra.Command, args []string) {
 		force := cmd.Flag("force").Value.String()
@@ -63,12 +63,12 @@ var updateCmd = &cobra.Command{
 			return
 		}
 
-		var iblFile = "ibl"
+		var iblFile = "iblapi"
 
 		binFileName := iblFile
 
 		if runtime.GOOS == "windows" {
-			binFileName = "ibl.exe"
+			binFileName = "iblapi.exe"
 		}
 
 		url := links.GetCdnURL() + "/dev/downloads/" + ProjectName + "/" + runtime.GOOS + "/" + runtime.GOARCH + "/" + binFileName

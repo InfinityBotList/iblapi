@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/InfinityBotList/ibl/internal/api"
-	"github.com/InfinityBotList/ibl/internal/ui"
-	"github.com/InfinityBotList/ibl/types"
-	"github.com/InfinityBotList/ibl/types/popltypes"
+	"github.com/InfinityBotList/iblapi/internal/api"
+	"github.com/InfinityBotList/iblapi/internal/ui"
+	"github.com/InfinityBotList/iblapi/types"
+	"github.com/InfinityBotList/iblapi/types/popltypes"
 )
 
 func PatchWebhooks(funnels *types.FunnelList, u popltypes.TestAuth) error {

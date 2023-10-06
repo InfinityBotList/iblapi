@@ -9,13 +9,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/InfinityBotList/ibl/internal/agents/webhookpatcher"
-	"github.com/InfinityBotList/ibl/internal/config"
-	"github.com/InfinityBotList/ibl/internal/input"
-	"github.com/InfinityBotList/ibl/internal/ui"
-	"github.com/InfinityBotList/ibl/internal/views"
-	"github.com/InfinityBotList/ibl/types"
-	"github.com/InfinityBotList/ibl/types/popltypes"
+	"github.com/InfinityBotList/iblapi/internal/agents/webhookpatcher"
+	"github.com/InfinityBotList/iblapi/internal/config"
+	"github.com/InfinityBotList/iblapi/internal/input"
+	"github.com/InfinityBotList/iblapi/internal/ui"
+	"github.com/InfinityBotList/iblapi/internal/views"
+	"github.com/InfinityBotList/iblapi/types"
+	"github.com/InfinityBotList/iblapi/types/popltypes"
 	"github.com/infinitybotlist/eureka/crypto"
 )
 
